@@ -62,6 +62,9 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "StockGet_production"
 
+  # -------------------------------------------------
+  # Mailing URL for production deployment (necessary for devise gem).
+  config.action_mailer.default_url_options = { host: 'https://stock-get.herokuapp.com/' }
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
