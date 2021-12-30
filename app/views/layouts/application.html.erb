@@ -9,7 +9,9 @@
     <%# https://dev.to/akshay03/how-to-setup-tailwind-3-on-rails-7-2dbo %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+  </head>
 
+  <body>
     <%# ----------------------------- %>
     <%# Required by devise gem (unless API-only app). %>
     <%# "Ensure you have flash messages in app/views/layouts/application.html.erb." %>
@@ -20,11 +22,7 @@
     <div class="alert">
       <%= alert %>
     </div>
-
     <%# ----------------------------- %>
-  </head>
-
-  <body>
     <%= yield %>
   </body>
 </html>

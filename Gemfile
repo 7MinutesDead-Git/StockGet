@@ -4,13 +4,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.0'
+gem 'rails', '~> 7.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
+
+# For pagination / infinite scroll.
+gem 'pagy', '~> 5.2.2'
 
 # User authentication with devise: https://github.com/heartcombo/devise
 gem 'devise', '~> 4.8'
