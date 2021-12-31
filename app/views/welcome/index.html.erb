@@ -1,18 +1,20 @@
 <h1>Welcome!</h1>
 
-<button class="btn btn-outline btn-primary">
-  Hello I Love you.
-</button>
+<div class="p-20 bg-cover card bg-base-200 center" style="background-image: url(https://picsum.photos/id/314/400/300);">
+  <button class="btn glass">
+    Hello I Love you.
+  </button>
 
-<%#
+  <%#
     link_to doesn't seem to be playing well with current js.. possibly tailwind?
     link_to was only sending a GET request, ignoring the delete method from embedded ruby here.
     button_to may be the way around that, however
       TODO: devise is not redirecting after logout.
     https://stackoverflow.com/questions/6567863/no-route-matches-get-users-sign-out#comment72157219_6701555
-%>
-<%= button_to 'Sign Out',
-              destroy_user_session_path,
-              method: :delete,
-              confirm: "Are you sure?",
-              class: "btn btn-primary" %>
+  %>
+  <%= button_to 'Sign Out',
+                destroy_user_session_path,
+                method: :delete,
+                class: "btn glass" %>
+
+</div>
