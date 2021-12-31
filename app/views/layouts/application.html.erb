@@ -16,13 +16,8 @@
     <%# ----------------------------- %>
     <%# Required by devise gem (unless API-only app). %>
     <%# "Ensure you have flash messages in app/views/layouts/application.html.erb." %>
-    <div class="notice">
-      <%= notice %>
-    </div>
-
-    <div class="alert">
-      <%= alert %>
-    </div>
+    <%= render 'layouts/partials/notices' %>
+    <%= render 'layouts/partials/alerts' %>
     <%# ----------------------------- %>
     <%= yield %>
   </body>

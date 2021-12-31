@@ -1767,6 +1767,13 @@ html {
   width: 1.5rem;
 }
 
+.alert-warning {
+  --tw-bg-opacity: 0.1;
+  background-color: hsla(var(--wa) / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: hsla(var(--wa) / var(--tw-text-opacity, 1));
+}
+
 .alert-error {
   --tw-bg-opacity: 0.1;
   background-color: hsla(var(--er) / var(--tw-bg-opacity, 1));
@@ -1807,6 +1814,10 @@ html {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .cursor-pointer {
@@ -1875,6 +1886,10 @@ html {
 }
 
 .actions {
+  padding: 1vmin;
+}
+
+.link {
   padding: 1vmin;
 }
 
