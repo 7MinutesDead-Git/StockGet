@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="EN">
+  <%# -------------------------------------------- %>
   <head>
     <title>StockGet</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,6 +12,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
+  <%# -------------------------------------------- %>
   <body>
     <%= render 'layouts/partials/navbar' %>
     <%# ----------------------------- %>
@@ -20,5 +22,6 @@
     <%= render 'layouts/partials/alerts' %>
     <%# ----------------------------- %>
     <%= yield %>
+    <%# ----------------------------- %>
   </body>
 </html>
