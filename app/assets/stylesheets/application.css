@@ -14,6 +14,27 @@
  *= require_self
  */
 
+/* command to generate/update css after changes:
+ *   npx tailwindcss -i app/assets/stylesheets/application.css -o app/assets/stylesheets/wind.css
+ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    /* Overwrite core tailwind here. */
+}
+
+.remember-me-card {
+    flex-shrink: 1;
+    width: 12rem;
+    height: 3rem;
+}
+
+.field {
+    padding: 1vmin;
+}
+
+.actions {
+    padding: 1vmin;
+}

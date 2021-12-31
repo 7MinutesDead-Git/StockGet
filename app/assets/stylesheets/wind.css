@@ -14,6 +14,10 @@
  *= require_self
  */
 
+/* command to generate/update css after changes:
+ *   npx tailwindcss -i app/assets/stylesheets/application.css -o app/assets/stylesheets/wind.css
+ */
+
 /*
  ! tailwindcss v3.0.8 | MIT License | https://tailwindcss.com
  */
@@ -1613,19 +1617,6 @@ html {
   box-shadow: 0 0 0 2px currentColor;
 }
 
-.menu.horizontal li.bordered>a,.menu.horizontal li.bordered>span {
-  --tw-border-opacity: 1;
-  border-color: hsla(var(--p) / var(--tw-border-opacity, 1));
-  border-left-width: 0;
-  border-bottom-width: 4px;
-}
-
-.menu li.bordered a,.menu li.bordered span {
-  --tw-border-opacity: 1;
-  border-color: hsla(var(--p) / var(--tw-border-opacity, 1));
-  border-left-width: 4px;
-}
-
 @-webkit-keyframes radiomark {
   0% {
     box-shadow: 0 0 0 12px hsl(var(--b1)) inset, 0 0 0 12px hsl(var(--b1)) inset, var(--focus-shadow);
@@ -1783,6 +1774,8 @@ html {
   color: hsla(var(--er) / var(--tw-text-opacity, 1));
 }
 
+/* Overwrite core tailwind here. */
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1869,6 +1862,20 @@ html {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.remember-me-card {
+  flex-shrink: 1;
+  width: 12rem;
+  height: 3rem;
+}
+
+.field {
+  padding: 1vmin;
+}
+
+.actions {
+  padding: 1vmin;
 }
 
 @media (min-width: 1024px) {
