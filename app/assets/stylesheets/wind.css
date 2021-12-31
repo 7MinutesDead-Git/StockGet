@@ -1703,10 +1703,6 @@ html {
   cursor: not-allowed;
 }
 
-.rounded-box {
-  border-radius: var(--rounded-box, 1rem);
-}
-
 .rounded-btn {
   border-radius: var(--rounded-btn, .5rem);
 }
@@ -1877,8 +1873,9 @@ html {
 
 .remember-me-card {
   flex-shrink: 1;
-  width: 12rem;
+  width: 13rem;
   height: 3rem;
+  padding: 1vmin;
 }
 
 .field {

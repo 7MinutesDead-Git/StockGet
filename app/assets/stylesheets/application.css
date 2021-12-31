@@ -27,8 +27,9 @@
 
 .remember-me-card {
     flex-shrink: 1;
-    width: 12rem;
+    width: 13rem;
     height: 3rem;
+    padding: 1vmin;
 }
 
 .field {
