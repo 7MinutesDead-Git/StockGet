@@ -24,22 +24,3 @@
 @layer components {
     /* Overwrite core tailwind here. */
 }
-
-.remember-me-card {
-    flex-shrink: 1;
-    width: 13rem;
-    height: 3rem;
-    padding: 1vmin;
-}
-
-.field {
-    padding: 1vmin;
-}
-
-.actions {
-    padding: 1vmin;
-}
-
-.link {
-    padding: 1vmin;
-}
