@@ -3,7 +3,7 @@
 //  npx tailwindcss -i app/assets/stylesheets/application.css -o app/assets/stylesheets/wind.css --watch
 
 module.exports = {
-  // include all HTML, JS and ERB files under the app directory
+  // include all HTML, JS and ERB files under the app directory.
   content: ["./app/**/*.{html,js,erb}"],
   theme: {
     extend: {},
@@ -15,15 +15,15 @@ module.exports = {
 
   daisyui: {
     themes: [
+        'light',
         'dark',
         'synthwave',
         'lofi',
-        'pastel',
-        'fantasy',
-        'wireframe',
+        'halloween',
         'dracula',
         'light',
-        'cupcake'
+        'retro',
+        'luxury',
     ]
   }
 }
