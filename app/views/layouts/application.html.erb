@@ -16,11 +16,13 @@
   <body>
     <%= render 'layouts/partials/navbar' %>
     <%# ----------------------------- %>
-    <%# Flash messages required by devise gem (unless API-only app). %>
-    <%= render 'layouts/partials/notices' %>
-    <%= render 'layouts/partials/alerts' %>
-    <%# ----------------------------- %>
-    <%= yield %>
+    <div class="container-main">
+      <%# Flash messages required by devise gem (unless API-only app). %>
+      <%= render 'layouts/partials/notices' %>
+      <%= render 'layouts/partials/alerts' %>
+      <%# ----------------------------- %>
+      <%= yield %>
+    </div>
     <%# ----------------------------- %>
   </body>
 </html>
