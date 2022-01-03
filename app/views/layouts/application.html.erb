@@ -8,7 +8,9 @@
     <%= csp_meta_tag %>
 
     <%# https://dev.to/akshay03/how-to-setup-tailwind-3-on-rails-7-2dbo %>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%#= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "wind", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: "all" %>
     <%= javascript_importmap_tags %>
   </head>
 
