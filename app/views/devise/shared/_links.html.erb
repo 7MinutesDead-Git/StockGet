@@ -1,8 +1,14 @@
 <%# -------------------------------------------- %>
+<% wind_link_styling = "link
+                        transform
+                        translate-x-0
+                        hover:text-sky-600
+                        hover:translate-x-1" %>
+
 <%- if controller_name != 'sessions' %>
   <%= link_to "Log In",
               new_session_path(resource_name),
-              class: "link link-secondary" %>
+              class: "link-secondary #{wind_link_styling}" %>
   <br />
 <% end %>
 
@@ -10,7 +16,7 @@
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
   <%= link_to "Sign up",
               new_registration_path(resource_name),
-              class: "link link-primary" %>
+              class: "link-primary #{wind_link_styling}" %>
   <br />
 <% end %>
 
@@ -18,7 +24,7 @@
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
   <%= link_to "Forgot your password?",
               new_password_path(resource_name),
-              class: "link link-accent" %>
+              class: "link-accent #{wind_link_styling}" %>
   <br />
 <% end %>
 
@@ -26,7 +32,7 @@
 <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
   <%= link_to "Didn't receive confirmation instructions?",
               new_confirmation_path(resource_name),
-              class: "link link-primary" %>
+              class: "link-primary #{wind_link_styling}" %>
   <br />
 <% end %>
 
@@ -34,7 +40,7 @@
 <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
   <%= link_to "Didn't receive unlock instructions?",
               new_unlock_path(resource_name),
-              class: "link link-primary" %>
+              class: "link-primary #{wind_link_styling}" %>
   <br />
 <% end %>
 
@@ -44,7 +50,7 @@
     <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}",
                 omniauth_authorize_path(resource_name, provider),
                 method: :post,
-                class: "btn btn-accent" %>
+                class: "btn btn-accent hover:scale-110" %>
     <br />
   <% end %>
 <% end %>
